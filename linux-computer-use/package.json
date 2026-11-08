@@ -1,13 +1,34 @@
 {
-  "name": "@local/linux-computer-use",
+  "name": "dsh-computer-use-linux",
   "version": "1.0.0",
-  "private": true,
+  "description": "Linux computer-use tools for the DeepSeek Harness (screenshot, click, type, key, scroll, window).",
   "type": "module",
   "exports": {
     ".": "./index.js",
     "./locale/*.json": "./locale/*.json",
     "./icon": "./icon.svg"
   },
-  "files": ["index.js", "cordis.patch.yml", "locale/*.json", "icon.svg"],
-  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilove-elaina/dsh-computer-use-linux.git"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "linux",
+    "computer-use",
+    "automation"
+  ],
+  "author": "ilove-elaina",
+  "license": "GPL-3.0-only"
 }

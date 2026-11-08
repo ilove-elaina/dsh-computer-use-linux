@@ -1,0 +1,4 @@
+- insert:
+    - id: linux-computer-use
+      name: '@local/linux-computer-use'
+      config: {}
